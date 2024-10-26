@@ -1,0 +1,28 @@
+
+GET http://localhost:3000/todos/
+
+###
+
+GET http://localhost:3000/todo/10
+
+###
+POST http://localhost:3000/todo/
+Content-Type: application/json
+
+{   
+    "id": 10,
+    "title":"Learn MongoDB",
+    "status": "complete"
+}
+
+###
+PUT http://localhost:3000/todo/15
+Content-Type: application/json
+
+{   
+    "title": "Clean the house",
+    "status": "complete"
+}
+
+###
+DELETE http://localhost:3000/todo/15
